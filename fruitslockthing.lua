@@ -11,8 +11,7 @@ Mouse.KeyDown:Connect(
                     {
                         Title = "no",
                         Text = "",
-                        Icon = "", -- the image if u want.
-                        Duration = 20
+                        Duration = 3
                     }
                 )
             else
@@ -22,8 +21,7 @@ Mouse.KeyDown:Connect(
                     {
                         Title = "yes",
                         Text = "",
-                        Icon = "", -- the image if u want.
-                        Duration = 20
+                        Duration = 3
                     }
                 )
             end
