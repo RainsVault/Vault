@@ -6,8 +6,26 @@ Mouse.KeyDown:Connect(
         if Key == press then
             if SilentAim then
                 SilentAim = false
+                game.StarterGui:SetCore(
+                    "SendNotification",
+                    {
+                        Title = "no",
+                        Text = "",
+                        Icon = "", -- the image if u want.
+                        Duration = 20
+                    }
+                )
             else
                 SilentAim = true
+                game.StarterGui:SetCore(
+                    "SendNotification",
+                    {
+                        Title = "yes",
+                        Text = "",
+                        Icon = "", -- the image if u want.
+                        Duration = 20
+                    }
+                )
             end
         end
     end
